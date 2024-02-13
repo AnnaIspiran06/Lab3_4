@@ -12,3 +12,9 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n - 1)
+
+
+def gcd(x, y):
+    while y != 0:
+        x, y = y, x % y
+    return x
